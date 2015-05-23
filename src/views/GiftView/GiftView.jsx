@@ -29,7 +29,7 @@ export default class GiftView extends Component {
               return (
                 <li className="gift-list-item">
                   <img src={item.imgurl}></img>
-                  <p>{item.info}</p>
+                  <p>{item.info + '我是一个大小房子，来自爱而来。我是一个大小房子，来自爱而来。我是一个大小房子，来自爱而来。'}</p>
                 </li>
               )
             })
