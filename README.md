@@ -1,12 +1,12 @@
-BetterCat
+CornerCat
 =========
 
-> 基于React全家桶的PC端【文艺】网站
+> 【街角遇见猫】 --- 基于React全家桶的PC端网站
 
 技术栈
 ------
 
-react + redux + immutable + less + ES6/7 + webpack + fetch + react-router + react-transform热替换 + webpack-dev-server
+react + react-router + redux + fetch + less + immutable + ES6/7 + webpack
 
 项目安装
 --------
@@ -15,8 +15,8 @@ First, clone the repo.
 
 ```bash
 
-$ git clone https://github.com/hicoldcat/BetterCat.git
-$ cd BetterCat
+$ git clone https://github.com/hicoldcat/CornerCat.git
+$ cd CornerCat
 
 ```
 
@@ -41,9 +41,9 @@ Now you should see a new browser window/tab opening in http://localhost:8080.
 项目说明
 --------
 
-> 项目目标是做一个基于React全家桶的PC端WEB网站
+> 项目目标是做一个基于React全家桶的PC端WEB网站,以此将React融会贯通
 >
-> 后期网站会与后端对接，形成集前端与后端于一体的真实项目案例
+> 后期会与后端对接，形成集前端与后端于一体的真实项目案例
 >
 > 最终项目会发布到个人网站上，敬请期待
 
@@ -65,8 +65,3 @@ Now you should see a new browser window/tab opening in http://localhost:8080.
 > 如果此项目对你有帮助，可以给个star哦
 
 ### 项目正在开发中......
-
-License
--------
-
-MIT
