@@ -1,25 +1,26 @@
-import MainView from 'views/MainView'
+import IndexView from 'views/IndexView/IndexView'
+import MainView from 'views/MainView/MainView'
 import FooView from 'views/FooView'
 import BarView from 'views/BarView'
-import PhotoView from 'views/PhotoView'
-import TravelView from 'views/TravelView'
 
 export default [
   {
     path: '/',
-    component: MainView
-  },
-  {
-    path: '/home',
-    component: MainView,
+    component: IndexView,
     childRoutes: [
       {
-        path: '/photo',
-        component: PhotoView
-      },
-      {
-        path: '/travel',
-        component: TravelView
+        path: '/home',
+        component: MainView,
+        childRoutes: [
+         {
+           path: '/foo',
+           component: FooView
+         },
+         {
+           path: '/bar',
+           component: BarView
+         }
+       ]
       }
     ]
   }
