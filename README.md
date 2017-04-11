@@ -6,7 +6,7 @@ CornerCat
 技术栈
 ------
 
-react + react-router + redux + fetch + less + immutable + ES6/7 + webpack
+react + react-router + redux + fetch + less + immutable + ES6/7 + webpack + ant design
 
 项目安装
 --------

@@ -4,8 +4,6 @@ import { BrowserRouter as Router } from 'react-router-dom'
 import routes from 'routes'
 import './App.css'
 
-import IndexView from 'views/IndexView/IndexView.jsx'
-
 export default class App extends Component {
   render () {
     return (
