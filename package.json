@@ -1,7 +1,7 @@
 {
   "name": "CornerCat",
   "version": "1.0.0",
-  "description": "转角遇见猫",
+  "description": "五更",
   "main": "src/main.js",
   "keywords": [
     "express",
@@ -19,6 +19,7 @@
     "autoprefixer": "^6.7.6",
     "babel-core": "^6.24.0",
     "babel-loader": "^6.3.2",
+    "babel-plugin-import": "^1.1.1",
     "babel-plugin-transform-class-properties": "^6.23.0",
     "babel-plugin-transform-runtime": "^6.22.0",
     "babel-preset-es2015": "^6.24.0",
@@ -36,6 +37,8 @@
     "function-bind": "^1.1.0",
     "html-webpack-plugin": "^2.28.0",
     "http-proxy-middleware": "^0.17.4",
+    "less": "^2.7.2",
+    "less-loader": "^4.0.3",
     "opn": "^4.0.2",
     "optimize-css-assets-webpack-plugin": "^1.3.0",
     "ora": "^1.1.0",
@@ -51,6 +54,7 @@
     "webpack-merge": "^2.6.1"
   },
   "dependencies": {
+    "antd": "^2.9.1",
     "history": "^4.6.1",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
