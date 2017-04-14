@@ -4,6 +4,7 @@ import { NavLink as Link } from 'react-router-dom'
 import './MainView.css'
 
 import NavBar from 'components/NavBar/NavBar'
+import WelcomeBar from 'components/WelcomeBar/WelcomeBar'
 
 export default class MainView extends Component {
   static propTypes = {
@@ -13,6 +14,7 @@ export default class MainView extends Component {
     return (
       <div className='main-view main-bg'>
         <NavBar />
+        <WelcomeBar />
         <div className='view'>
           {renderRoutes(this.props.route.childRoutes)}
         </div>

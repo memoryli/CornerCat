@@ -3,9 +3,15 @@
  src: url('../static/font/fangzheng.ttf');
 }
 
+@font-face {
+  font-family: 'governor';
+  src: url('../static/font/governor.ttf');
+}
+
 body {
   font-family: "lucida grande", "lucida sans unicode", lucida, helvetica, "fangzheng","Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
   background-color: #fff;
+  font-size: 62.5%;
 }
 .App {
   text-align: center;
