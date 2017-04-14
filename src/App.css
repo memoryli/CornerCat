@@ -1,5 +1,10 @@
+@font-face {
+ font-family: 'fangzheng';
+ src: url('../static/font/fangzheng.ttf');
+}
+
 body {
-  font-family: proxima-nova,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
+  font-family: "lucida grande", "lucida sans unicode", lucida, helvetica, "fangzheng","Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
   background-color: #fff;
 }
 .App {
