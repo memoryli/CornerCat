@@ -3,9 +3,8 @@
 }
 
 .main-bg {
-  background-image: url(http://img1.gamersky.com/image2013/11/20131101lx_2/gamersky_015origin_029_2013111929861.jpg);
+  background-image: url('../../assets/images/index_bg.jpg');
   background-repeat: no-repeat;
-  background-size: cover;
   background-position: center;
   height: 100%;
   width: 100%;

@@ -5,7 +5,9 @@ export default class WelcomeBar extends Component {
   render () {
     return (
       <div className="welcome-bar">
-        Welcome To My World !
+        <h1>Remember</h1>
+        <h1>your</h1>
+        <h1>dreams</h1>
       </div>
     );
   }
