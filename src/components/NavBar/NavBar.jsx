@@ -1,6 +1,10 @@
 import React, { Component, PropTypes } from 'react'
 import { Menu, Icon } from 'antd';
+import { NavLink as Link } from 'react-router-dom'
+import createHistory from 'history/createBrowserHistory'
 import './NavBar.less'
+
+const history = createHistory()
 
 const SubMenu = Menu.SubMenu;
 const MenuItemGroup = Menu.ItemGroup;
@@ -15,6 +19,7 @@ export default class NavBar extends Component {
     this.setState({
       current: e.key,
     });
+    history.push('/' + e.key)
   }
   render() {
     return (

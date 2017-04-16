@@ -36,7 +36,7 @@ $ npm start
 
 ```
 
-Now you should see a new browser window/tab opening in http://localhost:8080.
+Now you should see a new browser window/tab opening in http://localhost:8060.
 
 项目说明
 --------
