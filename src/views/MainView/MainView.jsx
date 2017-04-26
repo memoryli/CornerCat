@@ -5,6 +5,7 @@ import './MainView.css'
 
 import NavBar from 'components/NavBar/NavBar'
 import WelcomeBar from 'components/WelcomeBar/WelcomeBar'
+import CopyrightBar from 'components/CopyrightBar/CopyrightBar'
 
 export default class MainView extends Component {
   static propTypes = {
@@ -18,6 +19,7 @@ export default class MainView extends Component {
         <div className='view'>
           {renderRoutes(this.props.route.childRoutes)}
         </div>
+        <CopyrightBar/>
       </div>
     )
   }

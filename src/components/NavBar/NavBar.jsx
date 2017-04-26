@@ -31,7 +31,7 @@ export default class NavBar extends Component {
         <Menu.Item key="essay" disabled>随笔</Menu.Item>
         <Menu.Item key="design" disabled>设计</Menu.Item>
         <Menu.Item key="gift" disabled>好物</Menu.Item>
-        <Menu.Item key="foo" disabled>关于</Menu.Item>
+        <Menu.Item key="about" disabled>关于</Menu.Item>
       </Menu>
     </div>
     );
