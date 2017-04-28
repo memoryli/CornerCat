@@ -11,28 +11,27 @@ const MenuItemGroup = Menu.ItemGroup;
 
 export default class NavBar extends Component {
   state = {
-    current: 'home',
     defaultKeys: 'home'
   }
   handleClick = (e) => {
-    console.log('click ', e);
     this.setState({
       current: e.key,
     });
-    // history.push('/' + e.key)
+    history.push('/' + e.key)
   }
   render() {
     return (
       <div className="navbar">
-      <Menu onClick={this.handleClick} selectedKeys={[this.state.current]} mode="horizontal" defaultSelectedKeys={['home']}>
-        <Menu.Item key="home">首页</Menu.Item>
-        <Menu.Item key="portfolio" disabled>作品</Menu.Item>
-        <Menu.Item key="traveler" disabled>行者</Menu.Item>
-        <Menu.Item key="essay" disabled>随笔</Menu.Item>
-        <Menu.Item key="design" disabled>设计</Menu.Item>
-        <Menu.Item key="gift" disabled>好物</Menu.Item>
-        <Menu.Item key="about" disabled>关于</Menu.Item>
+      <Menu onClick={this.handleClick} selectedKeys={[history.location.pathname.slice(1)]} mode="horizontal" defaultSelectedKeys={['home']}>
+        <Menu.Item key="home"><Link to="/home" className="navbar-link">首页</Link></Menu.Item>
+        <Menu.Item key="portfolio"><Link to="/portfolio" className="navbar-link">作品</Link></Menu.Item>
+        <Menu.Item key="traveler"><Link to="/traveler" className="navbar-link">行者</Link></Menu.Item>
+        <Menu.Item key="essay"><Link to="/essay" className="navbar-link">随笔</Link></Menu.Item>
+        <Menu.Item key="design"><Link to="/design" className="navbar-link">设计</Link></Menu.Item>
+        <Menu.Item key="gift"><Link to="/gift" className="navbar-link">好物</Link></Menu.Item>
+        <Menu.Item key="about"><Link to="/about" className="navbar-link">关于</Link></Menu.Item>
       </Menu>
+
     </div>
     );
   }
