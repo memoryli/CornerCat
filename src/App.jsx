@@ -3,18 +3,20 @@ import { renderRoutes } from 'react-router-config'
 import { BrowserRouter as Router ,Route, Link } from 'react-router-dom'
 import routes from 'routes'
 import './App.css'
+import createHistory from 'history/createBrowserHistory'
 import NavBar from 'components/NavBar/NavBar'
 
 import * as Views from './routes'
 
+const history = createHistory()
 
 export default class App extends Component {
   render () {
-    console.info(Views.MainView)
     return (
-      <Router>
+      <Router history={history}>
         <div className='App'>
-          <NavBar />
+          <NavBar/>
+          <Route path="/"  exact component={Views.MainView.default}/>
           <Route path="/home" component={Views.MainView.default}/>
           <Route path="/portfolio" component={Views.PortfolioView.default}/>
           <Route path="/traveler" component={Views.TravelerView.default}/>

@@ -14,15 +14,12 @@ export default class NavBar extends Component {
     defaultKeys: 'home'
   }
   handleClick = (e) => {
-    this.setState({
-      current: e.key,
-    });
     history.push('/' + e.key)
   }
   render() {
     return (
       <div className="navbar">
-      <Menu onClick={this.handleClick} selectedKeys={[history.location.pathname.slice(1)]} mode="horizontal" defaultSelectedKeys={['home']}>
+      <Menu onClick={this.handleClick} selectedKeys={history.location.pathname == '/'?['home'] :[history.location.pathname.slice(1)]} mode="horizontal" defaultSelectedKeys={['home']}>
         <Menu.Item key="home"><Link to="/home" className="navbar-link">首页</Link></Menu.Item>
         <Menu.Item key="portfolio"><Link to="/portfolio" className="navbar-link">作品</Link></Menu.Item>
         <Menu.Item key="traveler"><Link to="/traveler" className="navbar-link">行者</Link></Menu.Item>
