@@ -1,6 +1,6 @@
 import React, { Component, PropTypes } from 'react'
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
-import './MainView.css'
+import './MainView.less'
 
 import WelcomeBar from 'components/WelcomeBar/WelcomeBar'
 import CopyrightBar from 'components/CopyrightBar/CopyrightBar'
