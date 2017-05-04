@@ -16,8 +16,8 @@ export default class App extends Component {
       <Router history={history}>
         <div className='App'>
           <NavBar/>
-          <Route path="/"  exact component={Views.MainView.default}/>
-          <Route path="/home" component={Views.MainView.default}/>
+          <Route path="/"  exact component={Views.HomeView.default}/>
+          <Route path="/home" component={Views.HomeView.default}/>
           <Route path="/portfolio" component={Views.PortfolioView.default}/>
           <Route path="/traveler" component={Views.TravelerView.default}/>
           <Route path="/essay" component={Views.EssayView.default}/>

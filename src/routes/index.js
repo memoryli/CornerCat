@@ -1,5 +1,5 @@
 // Export Views
-export const MainView = require('views/MainView/MainView')
+export const HomeView = require('views/HomeView/HomeView')
 export const PortfolioView = require('views/PortfolioView/PortfolioView')
 export const TravelerView = require('views/TravelerView/TravelerView')
 export const EssayView = require('views/EssayView/EssayView')
