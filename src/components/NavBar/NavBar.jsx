@@ -1,9 +1,9 @@
 import React, { Component, PropTypes } from 'react'
-import { Menu, Icon } from 'antd';
+// import { Menu, Icon } from 'antd';
+import Menu from 'antd/lib/menu';
 import { NavLink as Link } from 'react-router-dom'
 import createHistory from 'history/createBrowserHistory'
 import './NavBar.less'
-
 const history = createHistory()
 
 const SubMenu = Menu.SubMenu;
