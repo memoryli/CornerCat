@@ -1,8 +1,16 @@
 import React, { Component, PropTypes } from 'react'
 import './AboutView.less'
+import axios from 'axios'
 
 export default class AboutView extends Component {
   render() {
+    axios.get('/about').then((res) => {
+      console.info("Hello")
+
+    }).catch((error) => {
+      console.warn(error)
+    })
+
     return (
       <div className="about">
 
@@ -24,14 +32,13 @@ export default class AboutView extends Component {
         <div className="about-item-r">
           <div className="about-left">
             <div className="about-img">
-              <img src="http://img.hb.aicdn.com/c12a049de6bdde4f3e737d263b638ce5b2c025e6b927f-IZdy6q_fw658"></img>
+              <img src="http://cdn.duitang.com/uploads/item/201208/17/20120817205028_PBcHP.thumb.600_0.jpeg"></img>
             </div>
             <div className="about-info">
-              信仰不灭
+              爱就去追
             </div>
           </div>
           <div className="about-right">
-
               <h1 className="about-tit">What Do I Like ?</h1>
               <p className="about-info">我是一个「伪文艺」「伪摄影」「伪旅行」的三伪爱好者！</p>
           </div>
