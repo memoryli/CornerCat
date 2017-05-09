@@ -10,17 +10,22 @@
         "title":"Who Am  I ?",
         "info":"我希望是一个设计师，旅行作家，摄影师或者美食家。但我还不是......",
         "imgurl":"http://img.hb.aicdn.com/c12a049de6bdde4f3e737d263b638ce5b2c025e6b927f-IZdy6q_fw658",
-        "imgdesc":"信仰不灭",
-        "layouttype":"left"
+        "imgdesc":"信仰不灭"
       },
       {
         "id":"70002",
         "title":"What Do I Like ?",
         "info":"我是一个「伪文艺」「伪摄影」「伪旅行」的三伪爱好者！",
-        "imgurl":"爱就去追",
-        "imgdesc":"http://cdn.duitang.com/uploads/item/201208/17/20120817205028_PBcHP.thumb.600_0.jpeg",
-        "layouttype":"right"
+        "imgurl":"http://oq134mtbw.bkt.clouddn.com/20120817205028_PBcHP.thumb.600_0.jpeg",
+        "imgdesc":"爱就去追"
       },
+      {
+        "id":"70003",
+        "title":"How To Contact Me ?",
+        "info":"Send me an email: hicoldcat@foxmail.com ",
+        "imgurl":"http://oq134mtbw.bkt.clouddn.com/201107011055306014.jpg",
+        "imgdesc":"飞鸽传书"
+      }
     ]
   }
 }

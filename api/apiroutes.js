@@ -10,7 +10,6 @@ var about = require('./mockdata/about.json')
 
 
 apiRoutes.get('/about', function (req, res) {
-	console.info(about)
 	res.json(about);
 });
 
