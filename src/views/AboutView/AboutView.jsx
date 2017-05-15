@@ -34,10 +34,12 @@ export default class AboutView extends Component {
                     <p className="about-info">{item.info}</p>
                   </div>
                   <div className="about-right">
+                    <div className="about-box">
                       <div className="about-img">
                         <img src={item.imgurl}></img>
                       </div>
                       <div className="about-info">{item.imgdesc}</div>
+                    </div>
                   </div>
                 </div>
               )
@@ -45,10 +47,12 @@ export default class AboutView extends Component {
               return (
                 <div className="about-item-r" key={item.id}>
                   <div className="about-left">
-                    <div className="about-img">
-                      <img src={item.imgurl}></img>
+                    <div className="about-box">
+                      <div className="about-img">
+                        <img src={item.imgurl}></img>
+                      </div>
+                      <div className="about-info">{item.imgdesc}</div>
                     </div>
-                    <div className="about-info">{item.imgdesc}</div>
                   </div>
                   <div className="about-right">
                       <h1 className="about-tit">{item.title}</h1>
