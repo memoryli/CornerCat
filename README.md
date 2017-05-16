@@ -6,7 +6,7 @@ CornerCat
 技术栈
 ------
 
-react + react-router + redux + fetch + less + immutable + ES6/7 + webpack + ant design
+react + react-router + redux + axios + less + immutable + ES6/7 + webpack + ant design
 
 项目安装
 --------
@@ -32,7 +32,7 @@ Last, launch the project.
 
 ```bash
 
-$ npm start
+$ npm run dev
 
 ```
 
@@ -41,11 +41,16 @@ Now you should see a new browser window/tab opening in http://localhost:8060.
 项目说明
 --------
 
-> 项目目标是做一个基于React全家桶的PC端WEB网站,以此将React融会贯通
+> 项目目标是做一个基于React全家桶的PC端WEB网站,以此将React技术栈融会贯通
 >
 > 后期会与后端对接，形成集前端与后端于一体的真实项目案例
 >
 > 最终项目会发布到个人网站上，敬请期待
+
+线上Demo
+--------
+
+> [线上Demo](http://www.forbetter.me/)查看（实时更新本项目代码到线上个人网站）
 
 推荐
 ----
