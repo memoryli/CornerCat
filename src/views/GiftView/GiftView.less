@@ -1,3 +1,36 @@
 .gift{
   padding-top: 10%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+
+  .gift-list{
+    width: 60%;
+    -moz-column-count: 3;
+    -webkit-column-count: 3;
+    column-count: 3;
+    -moz-column-width: 30%;
+    -webkit-column-width: 30%;
+    column-width: 30%;
+    -moz-column-gap: 3em;
+    -webkit-column-gap: 3em;
+    column-gap: 3em;
+
+    .gift-list-item{
+      padding: .8em;
+      margin: 0 0 3em 0;
+      -moz-page-break-inside: avoid;
+      -webkit-column-break-inside: avoid;
+      break-inside: avoid;
+      -moz-box-shadow: 0 0 30px -7px rgba(0, 0, 0, 0.5);
+      -webkit-box-shadow: 0 0 30px -7px rgba(0, 0, 0, 0.5);
+      box-shadow: 0 0 30px -7px rgba(0, 0, 0, 0.5);
+      border-radius: 5px;
+
+      img{
+        width: 100%;
+      }
+    }
+  }
 }
