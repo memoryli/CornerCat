@@ -13,6 +13,7 @@ body {
   background-color: #fff;
   font-size: 62.5%;
 }
+
 .App {
   text-align: center;
   height: 100%;
@@ -20,4 +21,7 @@ body {
 
 #root {
   height: 100%;
+}
+a:focus{
+  text-decoration: none;
 }
