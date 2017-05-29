@@ -40,7 +40,7 @@ export default class EssayView extends Component {
                   <div className="info">{item.info}</div>
                   <div className="status">
                     <TimeBox time={item.createtime} />
-                    <div className="author"><span>by:</span>{item.author}</div>
+                    <div className="author"><span className="text">by:</span>{item.author}</div>
                   </div>
                 </div>
               )
