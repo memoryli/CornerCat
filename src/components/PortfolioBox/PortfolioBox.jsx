@@ -151,7 +151,7 @@ export default class PortfolioBox extends Component {
               left: isRight ? '0%' : '50%',
             }}
           >
-            <h1>{title}</h1>
+            <h1><a>{title}</a></h1>
             <Icon type="cross" onClick={e => this.onClose(e, i)} />
             <em />
             <p>{content}</p>
@@ -168,21 +168,87 @@ export default class PortfolioBox extends Component {
   render() {
 
     return (
-      <div className="pic-details-demo-wrapper" style={{height:this.state.wrapperHeight+'px'}}>
+      <div className="pic-details-demo-wrapper">
         <div  className="pic-details-demo">
           <QueueAnim type="bottom" className={`${this.props.className}-title`}>
-            <h1 key="h1">{this.props.picItem.boxtitle}</h1>
-            <p key="p">{this.props.picItem.boxdesc}</p>
+              <h1 key="h1"><a>{this.props.picItem.boxtitle}</a></h1>
           </QueueAnim>
-          <QueueAnim
-            delay={this.getDelay}
-            component="ul"
-            className={`${this.props.className}-image-wrapper`}
-            interval={0}
-            type="bottom"
-          >
-            {this.getLiChildren()}
-          </QueueAnim>
+          {/*<QueueAnim*/}
+            {/*delay={this.getDelay}*/}
+            {/*component="ul"*/}
+            {/*className={`${this.props.className}-image-wrapper`}*/}
+            {/*interval={0}*/}
+            {/*type="bottom"*/}
+          {/*>*/}
+            {/*{this.getLiChildren()}*/}
+          {/*</QueueAnim>*/}
+        <div className="post-meta">
+            <span className="post-time">
+                <span className="post-meta-item-icon">
+                    <i className="fa fa-calendar-o"></i>
+                </span>
+                <span className="post-meta-item-text">发表于</span>
+                <time title="创建于" itemProp="dateCreated datePublished" dateTime="2017-09-19T14:40:06+08:00">2017-09-19 </time>
+            </span>
+            <span className="post-category">
+                <span className="post-meta-divider">|</span>
+                <span className="post-meta-item-icon">
+                    <i className="fa fa-folder-o"></i>
+                </span>
+                <span className="post-meta-item-text">分类于</span>
+                <span itemProp="about" itemScope="" itemType="http://schema.org/Thing">
+                    <a href="/categories/JavaScript/" itemProp="url" rel="index">
+                        <span itemProp="name">JavaScript</span>
+                    </a>
+                </span>
+            </span>
+            <span className="post-comments-count">
+                <span className="post-meta-divider">|</span>
+                <span className="post-meta-item-icon">
+                    <i className="fa fa-comment-o"></i>
+                </span>
+                <a href="/call-apply-bind-this.html#SOHUCS" itemProp="discussionUrl">
+                    <span id="url::http://cherryblog.site/call-apply-bind-this.html" className="cy_cmt_count">2</span>
+                </a>
+                <span id="/call-apply-bind-this.html" className="leancloud_visitors">
+                    <span className="post-meta-divider">|</span>
+                    <span className="post-meta-item-icon">
+                        <i className="fa fa-eye"></i> </span>
+                    <span className="post-meta-item-text">阅读次数 </span>
+                    <span className="leancloud-visitors-count"></span>
+                </span>
+                <div className="post-wordcount">
+                    <span className="post-meta-item-icon">
+                        <i className="fa fa-edit"></i>
+                    </span>
+                    <span className="post-meta-item-text">字数统计</span>
+                    <span title="字数统计">3,314 字 </span>
+                    <span className="post-meta-divider">|</span>
+                    <span className="post-meta-item-icon">
+                        <i className="fa fa-clock-o"></i>
+                    </span>
+                    <span className="post-meta-item-text">阅读时长</span>
+                    <span title="阅读时长">13 分钟</span>
+                </div>
+            </span>
+        </div>
+        <div className="post-body" itemProp="articleBody"><p><a
+            href="https://user-gold-cdn.xitu.io/2017/9/3/c042568e973e72674c2e731b7df02d3b?imageView2/1/w/1200/h/700/q/85/interlace/1&amp;quo"
+            className="fancybox fancybox.image" rel="group"><img
+            src="https://user-gold-cdn.xitu.io/2017/9/3/c042568e973e72674c2e731b7df02d3b?imageView2/1/w/1200/h/700/q/85/interlace/1&amp;quo" alt="" />
+        </a></p><h1 id="前言"><a href="#前言" className="headerlink" title="前言"></a>前言</h1><p>最近在读 zepto
+            的源码，深有感触，感觉随便一段代码都可以延伸出一大堆的知识点，在看到深拷贝和浅拷贝的时候，之前只是了解过什么是深拷贝什么是浅拷贝，并没有对齐实现进行探索，所以本文主要讲一下什么是深拷贝、什么是浅拷贝、深拷贝与浅拷贝的区别，以及怎么进行深拷贝和怎么进行浅拷贝。</p>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <footer className="post-footer">
+                <div className="post-eof"></div>
+            </footer>
+        </div>
+        <div className="post-button text-center">
+            <a className="btn" href="/earning-react-js-is-easier-than-you-think.html#more" rel="contents">阅读全文 »</a>
+        </div>
         </div>
       </div>
     );

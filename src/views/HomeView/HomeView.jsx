@@ -11,7 +11,7 @@ export default class HomeView extends Component {
       <Router>
         <div className='home-view home-bg'>
           <WelcomeBar />
-          <CopyrightBar/>
+          {/*<CopyrightBar/>*/}
         </div>
       </Router>
     );

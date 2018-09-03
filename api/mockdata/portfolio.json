@@ -5,7 +5,7 @@
       "id":1001,
       "view":"portfolio",
       "createtime":"40203020598356",
-      "boxtitle":"Go Travel",
+      "boxtitle":"【JS】ECMAScript 中的浅拷贝和深拷贝",
       "boxdesc":"寻找时间，出发吧",
       "piclist":[
         {
@@ -140,7 +140,7 @@
       "id":1002,
       "view":"portfolio",
       "createtime":"40203020598356",
-      "boxtitle":"Go Travel",
+      "boxtitle":"this、call、apply、bind",
       "boxdesc":"寻找时间，出发吧",
       "piclist":[
         {

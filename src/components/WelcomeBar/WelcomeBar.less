@@ -3,39 +3,30 @@
 }
 
 .welcome-bar {
-  position: absolute;
-  width: 100%;
-  color: #000;
-  font-family: fangzheng;
-  margin-top: 150px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  .content{
-    border: 3px solid #000;
-    white-space: normal;
-    font-size: 2.5rem;
-    letter-spacing: .2rem;
-    text-transform: uppercase;
-    padding: 1rem;
-
-    transition: all 1s ease-in-out;
-   -webkit-transition:all 1s ease-in-out;
-     -moz-transition:all 1s ease-in-out;
-     -o-transition:all 1s ease-in-out;
-  }
-
-  .content:hover{
-     transform:rotate(360deg);
-     transform-origin:50% 50%;
-     -webkit-transform:rotate(360deg);
-     -webkit-transform-origin:50% 50%;
-     -moz-transform:rotate(360deg);
-     -moz-transform-origin:50% 50%;
-     -o-transform:rotate(360deg);
-     -o-transform-origin:50% 50%;
-     -ms-transform:rotate(360deg);
-     -ms-transform-origin:50% 50%;
+  .footer {
+    color: #999;
+    font-size: 14px;
+    .footer-inner {
+      box-sizing: border-box;
+      margin: 120px auto 20px;
+      width: 700px;
+      text-align: center;
+      .with-love {
+        margin: 0 5px;
+        .fa {
+          font: normal normal normal 14px/1 FontAwesome;
+          font-size: inherit;
+          text-rendering: auto;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+        }
+      }
+      .site-uv {
+        margin-right: 10px;
+      }
+      .site-pv, .site-uv {
+        display: inline-block;
+      }
+    }
   }
 }
