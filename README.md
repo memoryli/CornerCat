@@ -1,7 +1,7 @@
 CornerCat
 =========
 
-> 【五更】 --- 基于React全家桶的PC端网站
+> 【五更】 --- 基于React全家桶的PC端博客网站
 
 技术栈
 ------
@@ -47,20 +47,11 @@ Now you should see a new browser window/tab opening in http://localhost:8060.
 >
 > 最终项目会发布到个人网站上，敬请期待
 
-线上Demo
---------
-
-> [线上Demo](http://www.forbetter.me/)查看（实时更新本项目代码到线上个人网站）
-
-推荐
-----
-
-> 如果你正在学习Vuejs相关的知识，可以去看一下我的另外一个关于VUE全家桶的开源项目。[传送门](https://github.com/hicoldcat/TimeCat.git)
 
 项目完成度
 ----------
 
-> [√] 项目初始化 -- 完成[2017-03-12]
+> [√] 项目初始化 -- 持续开发中
 
 贡献
 ----
