@@ -15,7 +15,7 @@ First, clone the repo.
 
 ```bash
 
-$ git clone https://github.com/hicoldcat/CornerCat.git
+$ https://github.com/memoryli/CornerCat
 $ cd CornerCat
 
 ```
